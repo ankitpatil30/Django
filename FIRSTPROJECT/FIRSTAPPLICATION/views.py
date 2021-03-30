@@ -6,6 +6,9 @@ from django.http import HttpResponse
 def signup(request):
     return render(request,'FIRSTAPPLICATION/signup.html')
 
+def portfolio(request):
+    return render(request, 'FIRSTAPPLICATION/portfolio.html')
+
 def home(request):
     name = "Hello"
     return render(request, 'FIRSTAPPLICATION/home.html')
