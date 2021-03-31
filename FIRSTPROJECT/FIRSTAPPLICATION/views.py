@@ -21,3 +21,12 @@ def about(request):
 
 def contact(request):
     return HttpResponse("contact Nagato here  ")
+
+
+#  Django ORM --- Object Relational Mapping --> replica of SQL queries
+
+
+
+
+
+
