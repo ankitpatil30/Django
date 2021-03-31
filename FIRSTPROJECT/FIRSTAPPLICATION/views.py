@@ -28,10 +28,23 @@ def contact(request):
 
 def form_view(request):
     #Template Tagging --> inject python code to html code
+    if request.method=="POST":
+        form = forms.Signupform(request.POST)
+        if form.is_valid():
+            print("Validation Worked")
+            print("First Name: " + form.cleaned_data['first_name'])
+            print("Last Name: " + form.cleaned_data['last_name'])
+            print("Email: " + form.cleaned_data['email'])
+            print("Verify Email: " + form.cleaned_data['verify_email'])
+            print("Password: " + form.cleaned_data['password'])
+
     form=forms.Signupform
     return render(request, 'FIRSTAPPLICATION/register.html', {'form':form})
 
 
 
 
+# Validations: 
+# Built-in validations
+# Custom validations
 
