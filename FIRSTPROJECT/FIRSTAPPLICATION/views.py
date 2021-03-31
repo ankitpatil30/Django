@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from . import forms
 
 # Create your views here.
 
@@ -25,6 +26,10 @@ def contact(request):
 
 #  Django ORM --- Object Relational Mapping --> replica of SQL queries
 
+def form_view(request):
+    #Template Tagging --> inject python code to html code
+    form=forms.Signupform
+    return render(request, 'FIRSTAPPLICATION/register.html', {'form':form})
 
 
 

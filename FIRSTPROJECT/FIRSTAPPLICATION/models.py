@@ -30,6 +30,7 @@ class Student(models.Model):
 # Types of inheritance
 # Django Abstract Base Class model inheritance
 # Django Multi Table Model Inheritance
+# Django Proxy Model Inheritance --> HW
 
 class Contactinfo(models.Model):
     name=models.CharField(max_length=30)

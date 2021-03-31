@@ -8,4 +8,5 @@ urlpatterns = [
     path('contact', views.contact, name='SixPathsPain contacts'),
     path('signup', views.signup, name='SixPathsPain Signup'), 
     path('portfolio', views.portfolio, name='SixPathsPain portfolio'), 
+    path('register', views.form_view),
 ]
